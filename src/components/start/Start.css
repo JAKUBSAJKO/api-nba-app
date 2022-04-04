@@ -1,0 +1,56 @@
+.app__container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: var(--color-white);
+}
+
+.app__container h1 {
+  font-size: 72px;
+  padding: 8rem 0 1rem;
+}
+
+.app__container h2 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 2rem 0 0;
+}
+
+.app__container p {
+  text-align: center;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.app__container-logoandbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__container-logoandbutton button {
+  padding: 1.2rem 2rem;
+  background: var(--color-blue);
+  border: none;
+  color: var(--color-white);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.app__container-logoandbutton button:hover {
+  background: var(--color-red);
+}
+
+.app__container-logoandbutton img {
+  padding: 2rem 7rem;
+}
+
+.desktop {
+  display: flex;
+}
