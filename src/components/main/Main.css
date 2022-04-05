@@ -1,5 +1,56 @@
-.main-test {
-  height: 100vh;
-  width: 100vw;
-  background: lightblue;
+.main__container {
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 4rem 0;
+}
+
+.main__container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-text-one);
+}
+
+.main__container-h1-nba::after {
+  background: var(--color-text-one);
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main__container-h1-nba-description::after {
+  background: var(--color-text-one);
+  content: "";
+  display: block;
+  height: 2px;
+  width: 34%;
+  margin: 0 auto;
+}
+
+.main__container-nba-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text-one);
+  padding: 2rem 2.4rem 4rem;
+  text-align: center;
+}
+
+.main__container-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main__container img {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.main__container-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-one);
+  padding: 1rem 0;
 }
