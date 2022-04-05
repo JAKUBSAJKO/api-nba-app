@@ -1,19 +1,11 @@
 import React from "react";
 import "./Start.css";
 import logostart from "../../assets/logostart.png";
-import nbacourt from "../../assets/nbacourt.jpg";
 import { Link } from "react-router-dom";
 
 const Start = () => {
   return (
-    <div
-      className="app__container"
-      style={{
-        backgroundImage: `linear-gradient(rgba(48, 48, 48, 0.7), rgba(48, 48, 48, 0.7)),url(${nbacourt})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="app__container">
       <h1>NBA APP</h1>
       <p>
         Aplikacja wykorzystuje dane pochodzące z FREE NBA API Documentation.

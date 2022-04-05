@@ -1,0 +1,42 @@
+.app__lazy {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: linear-gradient(
+      rgba(48, 48, 48, 0.5),
+      rgba(48, 48, 48, 0.5)
+    ),
+    url("../../assets/ball.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.app__lazy h1 {
+  font-size: 40px;
+  letter-spacing: 1rem;
+  color: var(--color-white);
+  animation: flash-effect 3s infinite linear;
+}
+
+@keyframes flash-effect {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

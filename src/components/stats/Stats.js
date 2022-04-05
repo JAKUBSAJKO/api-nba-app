@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Stats.css";
 
-const Stats = () => {
+const Stats = ({ setNavOn }) => {
+  useEffect(() => {
+    setNavOn(true);
+  }, [setNavOn]);
   return (
     <div className="app__stats">
       <h1>Stats</h1>

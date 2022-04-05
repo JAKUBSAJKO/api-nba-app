@@ -8,6 +8,14 @@
   flex-direction: column;
 
   color: var(--color-white);
+
+  background-image: linear-gradient(
+      rgba(48, 48, 48, 0.7),
+      rgba(48, 48, 48, 0.7)
+    ),
+    url("../../assets/nbacourt.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .app__container h1 {

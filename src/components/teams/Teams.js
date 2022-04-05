@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Teams.css";
 
-const Teams = () => {
+const Teams = ({ setNavOn }) => {
+  useEffect(() => {
+    setNavOn(true);
+  }, [setNavOn]);
   return (
     <div className="app__teams">
       <h1>Teams</h1>
