@@ -12,6 +12,7 @@ const Games = lazy(() => import("./components/games/Games.js"));
 const Players = lazy(() => import("./components/players/Players.js"));
 const Stats = lazy(() => import("./components/stats/Stats.js"));
 const Teams = lazy(() => import("./components/teams/Teams"));
+const Teamsdetail = lazy(() => import("./components/teamsdetail/Teamsdetail"));
 
 function App() {
   const [navOn, setNavOn] = useState(false);
@@ -34,6 +35,10 @@ function App() {
             <Route path="/players" element={<Players setNavOn={setNavOn} />} />
             <Route path="/stats" element={<Stats setNavOn={setNavOn} />} />
             <Route path="/teams" element={<Teams setNavOn={setNavOn} />} />
+            <Route
+              path="/teams/:id"
+              element={<Teamsdetail setNavOn={setNavOn} />}
+            />
           </Routes>
           {navOn === true ? <Footer /> : null}
         </div>

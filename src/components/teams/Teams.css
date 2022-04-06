@@ -1,5 +1,49 @@
 .app__teams {
-  height: 100vh;
   width: 100%;
-  background: lightblue;
+  padding: 4rem 0;
+  color: var(--color-text-one);
+}
+
+.app__teams h1 {
+  text-align: center;
+  padding: 0 0 2rem;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.app__teams h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 600px;
+  margin: 0 auto;
+  background: var(--color-text-one);
+}
+
+.app__teams-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app__teams-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.app__teams-teams-name {
+  padding: 0.6rem 0;
+  font-weight: 500;
+}
+
+.app_teams-icon {
+  opacity: 0;
+  color: rgb(236, 137, 22);
+  font-size: 24px;
+  margin: 0 1rem;
+}
+
+.app__teams-element:hover .app_teams-icon {
+  opacity: 1;
 }
