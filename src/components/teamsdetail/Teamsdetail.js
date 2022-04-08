@@ -47,7 +47,7 @@ const Teamsdetail = ({ setNavOn }) => {
       </div>
       <Link to="/teams">
         <button className="app__teamdetail-btn">
-          <h3>Back</h3> <FaBackspace className="app__teamdetail-btn-icon" />
+          <h3>Wróć</h3> <FaBackspace className="app__teamdetail-btn-icon" />
         </button>
       </Link>
     </div>

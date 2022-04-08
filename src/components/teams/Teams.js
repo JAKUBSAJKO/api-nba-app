@@ -26,7 +26,7 @@ const Teams = ({ setNavOn }) => {
 
   return (
     <div className="app__teams">
-      <h1>Teams</h1>
+      <h1>Drużyny</h1>
       <div className="app__teams-content">
         {teams.map((team) => {
           return (
