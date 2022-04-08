@@ -82,6 +82,7 @@ const Players = ({ setNavOn, currentPage, setCurrentPage }) => {
               setCurrentPage(1);
             } else counterPage.style.display = "flex";
             panel.style.top = "-400px";
+            console.log("test");
           }}
         >
           <BiSearchAlt2 className="app__players-search-icon" />
