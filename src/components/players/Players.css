@@ -52,6 +52,7 @@
 .app__players-card h2 {
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .app__players-icon {
   font-size: 152px;

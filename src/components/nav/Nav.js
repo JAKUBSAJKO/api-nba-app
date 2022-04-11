@@ -22,8 +22,8 @@ const Nav = () => {
         <Link to="/games">
           <li>MECZE</li>
         </Link>
-        <Link to="/stats">
-          <li>STATYSTYKI</li>
+        <Link to="/plans">
+          <li>WAŻNE</li>
         </Link>
       </ul>
     </nav>

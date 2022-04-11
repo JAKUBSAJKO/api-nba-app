@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { FaBasketballBall } from "react-icons/fa";
 
-const Teams = ({ setNavOn }) => {
+const Teams = ({ setNavOn, setMorePages }) => {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
+    setMorePages(25);
     axios
       .get("https://free-nba.p.rapidapi.com/teams", {
         headers: {

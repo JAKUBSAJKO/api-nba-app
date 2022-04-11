@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import "./Main.css";
 import nbadivision from "../../assets/NBAConferencesDivisions.png";
 
-const Main = ({ setNavOn }) => {
+const Main = ({ setNavOn, setMorePages }) => {
   useEffect(() => {
+    setMorePages(25);
     setNavOn(true);
   }, [setNavOn]);
   return (

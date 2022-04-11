@@ -13,13 +13,14 @@ const Players = lazy(() => import("./components/players/Players.js"));
 const Playersdetail = lazy(() =>
   import("./components/playersdetail/Playersdetail")
 );
-const Stats = lazy(() => import("./components/stats/Stats.js"));
 const Teams = lazy(() => import("./components/teams/Teams"));
 const Teamsdetail = lazy(() => import("./components/teamsdetail/Teamsdetail"));
+const Plans = lazy(() => import("./components/plans/Plans"));
 
 function App() {
   const [navOn, setNavOn] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [morePages, setMorePages] = useState(25);
 
   return (
     <BrowserRouter>
@@ -34,8 +35,20 @@ function App() {
           {navOn === true ? <Nav /> : null}
           <Routes>
             <Route path="/" element={<Start />} />
-            <Route path="/home" element={<Main setNavOn={setNavOn} />} />
-            <Route path="/games" element={<Games setNavOn={setNavOn} />} />
+            <Route
+              path="/home"
+              element={<Main setNavOn={setNavOn} setMorePages={setMorePages} />}
+            />
+            <Route
+              path="/games"
+              element={
+                <Games
+                  setNavOn={setNavOn}
+                  morePages={morePages}
+                  setMorePages={setMorePages}
+                />
+              }
+            />
             <Route
               path="/players"
               element={
@@ -43,6 +56,7 @@ function App() {
                   setNavOn={setNavOn}
                   currentPage={currentPage}
                   setCurrentPage={setCurrentPage}
+                  setMorePages={setMorePages}
                 />
               }
             />
@@ -50,11 +64,21 @@ function App() {
               path="/players/:id"
               element={<Playersdetail setNavOn={setNavOn} />}
             />
-            <Route path="/stats" element={<Stats setNavOn={setNavOn} />} />
-            <Route path="/teams" element={<Teams setNavOn={setNavOn} />} />
+            <Route
+              path="/teams"
+              element={
+                <Teams setNavOn={setNavOn} setMorePages={setMorePages} />
+              }
+            />
             <Route
               path="/teams/:id"
               element={<Teamsdetail setNavOn={setNavOn} />}
+            />
+            <Route
+              path="/plans"
+              element={
+                <Plans setNavOn={setNavOn} setMorePages={setMorePages} />
+              }
             />
           </Routes>
           {navOn === true ? <Footer /> : null}

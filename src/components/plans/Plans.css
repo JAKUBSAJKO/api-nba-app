@@ -1,0 +1,61 @@
+.app__plans {
+  width: 100%;
+  padding: 4rem 0;
+  color: var(--color-text-one);
+}
+
+.app__plans-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app__plans-content h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.app__plans-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__plans-no .app__plans-header {
+  padding: 2rem 0 0;
+}
+
+.app__plans-yes hr,
+.app__plans-no hr {
+  margin: 1rem 0;
+}
+
+.app__plans-header-icon-yes {
+  font-size: 24px;
+  color: rgb(90, 223, 90);
+  margin: 0 1rem;
+}
+
+.app__plans-header-icon-no {
+  font-size: 24px;
+  color: rgb(223, 95, 90);
+  margin: 0 1rem;
+}
+
+.app__plans-yes ul,
+.app__plans-no ul {
+  padding-left: 3.6rem;
+}
+
+.app__plans-yes ul h2,
+.app__plans-no ul h2 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 1rem 0 0;
+}
+
+.app__plans-yes ul li,
+.app__plans-no ul li {
+  padding: 0.2rem 0 0;
+}

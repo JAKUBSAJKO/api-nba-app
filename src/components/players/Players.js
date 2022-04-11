@@ -9,12 +9,13 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import { TiDeleteOutline } from "react-icons/ti";
 import { BsArrowBarDown } from "react-icons/bs";
 
-const Players = ({ setNavOn, currentPage, setCurrentPage }) => {
+const Players = ({ setNavOn, currentPage, setCurrentPage, setMorePages }) => {
   const [players, setPlayers] = useState([]);
   const [namePlayer, setNamePlayer] = useState("");
   const [searchName, setSearchName] = useState("");
 
   useEffect(() => {
+    setMorePages(25);
     axios
       .get("https://free-nba.p.rapidapi.com/players", {
         params: {
