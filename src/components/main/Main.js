@@ -45,8 +45,9 @@ const Main = ({ setNavOn, setMorePages }) => {
         konferencji kolejność ustalana jest na podstawie ilości wygranych i
         przegranych meczów w sezonie. Rozgrywki play-off przebiegają według
         scenariusza: w I rundzie play-off pierwszy zespół gra z ósmym, drugi z
-        siódmym, trzeci z szóstym, czwarty z piątym. <br className="desktop" />W
-        II rundzie play-off zwycięzca pojedynku pierwszy z ósmym gra ze
+        siódmym, trzeci z szóstym, czwarty z piątym.
+        <br className="desktop" />
+        W II rundzie play-off zwycięzca pojedynku pierwszy z ósmym gra ze
         zwycięzcą pojedynku czwarty z piątym, i dalej zwycięzca pojedynku drugi
         z siódmym, gra ze zwycięzcą pojedynku trzeci z szóstym. Taki rozstaw
         jest spowodowany tym, aby już w II rundzie play-off nie trafiły na
@@ -55,9 +56,10 @@ const Main = ({ setNavOn, setMorePages }) => {
         spotykają się ze sobą w finale konferencji. Zwycięzcy finałów
         konferencji spotykają się ze sobą w finale ligi. Zespoły rozstawione
         wyżej grają więcej meczów u siebie w systemie 2 mecze dom, 2 – wyjazd,
-        1-dom, 1-wyjazd, 1-dom. <br className="desktop" />W pojedynkach fazy
-        play-off gra się do czterech zwycięstw (tzw. best of seven). Ten system
-        2-2-1-1-1 obowiązuje również w finale NBA.)
+        1-dom, 1-wyjazd, 1-dom.
+        <br className="desktop" />W pojedynkach fazy play-off gra się do
+        czterech zwycięstw (tzw. best of seven). Ten system 2-2-1-1-1 obowiązuje
+        również w finale NBA.)
       </p>
     </div>
   );

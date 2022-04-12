@@ -1,4 +1,5 @@
 .main__container {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 4rem 0;
@@ -52,4 +53,46 @@
   font-weight: 400;
   color: var(--color-text-one);
   padding: 1rem 0;
+}
+
+@media screen and (max-width: 650px) {
+  .main__container {
+    width: 80vw;
+  }
+
+  .main__container h1 {
+    font-size: 24px;
+  }
+
+  .main__container-h1-nba::after {
+    width: 100%;
+  }
+
+  .main__container-nba-description {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2rem 0 3rem;
+  }
+
+  .main__container-h1-nba-description::after {
+    width: 100%;
+  }
+
+  .main__container-image {
+    width: 100%;
+  }
+
+  .main__container-text {
+    font-size: 16px;
+    padding: 0.4rem 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
 }

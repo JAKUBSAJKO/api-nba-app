@@ -69,3 +69,46 @@
 .app__teamdetail-btn-icon {
   font-size: 22px;
 }
+
+@media screen and (max-width: 650px) {
+  .app__teamdetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .app__teamdetail-content {
+    background: var(--color-white-yellow);
+    height: 100vh;
+    width: 100vw;
+    border-radius: none;
+    box-shadow: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .app__teamdetail-strip {
+    display: none;
+  }
+
+  .app__teamdetail-content h1 {
+    font-weight: 500;
+    padding: 2rem 0 1rem;
+    font-size: 24px;
+  }
+
+  .app__teamdetail-content h2 {
+    font-weight: 400;
+    padding: 0.2rem 0;
+  }
+
+  .app__teamdetail-btn {
+    margin: 0 0 2rem;
+  }
+}

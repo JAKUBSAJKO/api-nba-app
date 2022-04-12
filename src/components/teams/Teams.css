@@ -47,3 +47,33 @@
 .app__teams-element:hover .app_teams-icon {
   opacity: 1;
 }
+
+@media screen and (max-width: 650px) {
+  .app__teams {
+    width: 100vw;
+  }
+
+  .app__teams h1 {
+    font-size: 24px;
+  }
+
+  .app__teams h1::after {
+    width: 80%;
+  }
+
+  .app__teams-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app_teams-icon {
+    display: none;
+  }
+
+  .app__teams-element:hover .app_teams-icon {
+    display: none;
+  }
+}

@@ -1,4 +1,5 @@
 .app__footer {
+  position: relative;
   width: 100%;
   background: var(--color-blue);
 }
@@ -38,4 +39,39 @@
 .app__footer-icon {
   font-size: 18px;
   margin: 1rem 1.6rem;
+}
+
+@media screen and (max-width: 650px) {
+  .app__footer {
+    width: 100vw;
+  }
+
+  .app__footer-content {
+    width: 60vw;
+  }
+
+  .app__footer-content h1 {
+    font-size: 16px;
+  }
+
+  .app__footer-content h2 {
+    font-size: 12px;
+  }
+
+  .app__footer-content h3 {
+    font-size: 8px;
+  }
+
+  .app__footer-content img {
+    padding: 1rem 0;
+  }
+
+  .app__footer-icons {
+    padding: 1rem 0;
+  }
+
+  .app__footer-icon {
+    font-size: 16px;
+    margin: 0.6rem 1rem;
+  }
 }

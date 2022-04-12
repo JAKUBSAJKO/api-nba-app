@@ -164,3 +164,100 @@
 .app__players-wysun-group-icon {
   font-size: 32px;
 }
+
+@media screen and (max-width: 650px) {
+  .app__players h1 {
+    font-size: 24px;
+  }
+
+  .app__players h1::after {
+    width: 90%;
+  }
+
+  .app__players-card {
+    height: 220px;
+    width: 160px;
+    border: 1px solid var(--color-black);
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .app__players-card:hover {
+    display: none;
+  }
+
+  .app__players-card h2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .app__players-card h3 {
+    font-size: 16px;
+  }
+  .app__players-icon {
+    font-size: 112px;
+  }
+
+  .app__players-counter-page {
+    width: 80%;
+  }
+
+  .app__players-counter {
+    font-size: 24px;
+  }
+
+  .app__players-arrow {
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .app__players-counter-main {
+    margin: 0 1rem;
+    font-size: 32px;
+  }
+
+  .app__players-counter-main::after {
+    background: var(--color-text-one);
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+  }
+
+  /* SERACH PANEL */
+  .app__players-search-panel {
+    height: 180px;
+    top: -600px;
+    flex-direction: column;
+  }
+
+  .app__players-search-input {
+    border-radius: 30px;
+    height: 50px;
+    padding-left: 1.6rem;
+  }
+
+  .app__players-search-input:focus {
+    box-shadow: 0px 0px 8px var(--color-white);
+  }
+
+  .app__players-search-btn {
+    margin: 1.2rem 0 0;
+    border-radius: 24px;
+    height: 44px;
+  }
+
+  .app__players-wysun-group h1 {
+    font-size: 16px;
+  }
+
+  .app__players-wysun-group-icon {
+    font-size: 24px;
+  }
+}

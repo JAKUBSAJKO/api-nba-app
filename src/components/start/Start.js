@@ -10,8 +10,10 @@ const Start = () => {
       <p>
         Aplikacja wykorzystuje dane pochodzące z FREE NBA API Documentation.
         <br className="desktop" />
+        <br className="mobile" />
         Została stworzona w celach edukacjynch, <br className="desktop" />
-        aby sprawdzić swoje umiętności przy pracy z API.
+        aby sprawdzić swoje umiętności <br className="mobile" />
+        przy pracy z API.
       </p>
       <div className="app__container-logoandbutton">
         <img src={logostart} alt="" />

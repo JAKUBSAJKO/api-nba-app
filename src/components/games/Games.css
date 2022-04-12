@@ -98,3 +98,58 @@
 .app__games-more-icon {
   font-size: 24px;
 }
+
+@media screen and (max-width: 650px) {
+  .app__games h1 {
+    font-size: 32px;
+  }
+
+  .app__games h1::after {
+    width: 80%;
+  }
+
+  .app__games-content {
+    width: 90%;
+  }
+
+  .app__games-screen {
+    border: none;
+  }
+
+  .app__games-home_team h2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .app__games-result h3,
+  .app__games-result h4 {
+    padding: 1rem 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .app__games-home_team {
+    flex: 1;
+    text-align: center;
+  }
+
+  .app__games-info {
+    width: 140px;
+    height: 40px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .app__games-info h3 {
+    font-size: 12px;
+  }
+
+  .app__games-more-icon {
+    font-size: 16px;
+  }
+
+  .app__games-more h4 {
+    font-size: 12px;
+  }
+}

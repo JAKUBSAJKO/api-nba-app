@@ -62,3 +62,42 @@
 .desktop {
   display: flex;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .app__container h1 {
+    font-size: 32px;
+    padding: 8rem 0 1rem;
+  }
+
+  .app__container h2 {
+    font-size: 11px;
+  }
+
+  .app__container p {
+    font-size: 14px;
+    font-weight: 300;
+    width: 90%;
+  }
+
+  .app__container-logoandbutton button {
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+    margin-top: 1.2rem;
+  }
+
+  .app__container-logoandbutton img {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}
