@@ -24,9 +24,9 @@ const Nav = () => {
 
   return (
     <nav className="app__nav" id="nav">
-      <span className="app__nav-menu" id="menu" onClick={showMenu}>
-        <BiMenu />
-      </span>
+      <div className="app__nav-menu" id="menu" onClick={showMenu}>
+        <BiMenu className="app__nav-menu-icon" />
+      </div>
       <div className="app__nav-logo">
         <Link to="/home">
           <img src={logostart} alt="" />
@@ -48,9 +48,9 @@ const Nav = () => {
         <Link to="/plans" onClick={closeMenu}>
           <li>WAŻNE</li>
         </Link>
-        <span className="app__nav-x" onClick={closeMenu}>
+        <div className="app__nav-x" onClick={closeMenu}>
           <CgClose />
-        </span>
+        </div>
       </ul>
     </nav>
   );

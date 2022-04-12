@@ -55,6 +55,20 @@
   padding: 1rem 0;
 }
 
+@media screen and (max-width: 1150px) {
+  .main__container h1 {
+    font-size: 32px;
+  }
+
+  .main__container-h1-nba::after {
+    width: 100%;
+  }
+
+  .main__container-h1-nba-description::after {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .main__container {
     width: 80vw;

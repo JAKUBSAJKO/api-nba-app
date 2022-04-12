@@ -64,6 +64,24 @@
   display: none;
 }
 
+.app__nav-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__nav-menu {
+    display: none;
+  }
+
+  .app__nav-x {
+    display: none;
+  }
+
+  .app__nav-menu-icon {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .app__nav {
     position: fixed;
@@ -128,5 +146,9 @@
     top: 20px;
     left: 20px;
     font-size: 24px;
+  }
+
+  .app__nav-menu-icon {
+    display: flex;
   }
 }

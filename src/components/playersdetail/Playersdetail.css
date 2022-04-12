@@ -69,6 +69,17 @@
   display: none;
 }
 
+@media screen and (max-width: 1150px) {
+  .app__playerdetail-mobile-back {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-size: 32px;
+    color: rgb(161, 5, 5);
+  }
+}
+
 @media screen and (max-width: 650px) {
   .app__playerdetail-content {
     display: flex;
