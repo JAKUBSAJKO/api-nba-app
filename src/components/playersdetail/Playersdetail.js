@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import "./Playersdetail.css";
 import axios from "axios";
 import { IoIosPerson } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { IoArrowBack } from "react-icons/io5";
 
 const Playersdetail = ({ setNavOn }) => {
   const { id } = useParams();
@@ -30,6 +32,9 @@ const Playersdetail = ({ setNavOn }) => {
 
   return (
     <div className="app__playerdetail">
+      <Link to="/players" className="app__playerdetail-mobile-back">
+        <IoArrowBack />
+      </Link>
       <div className="app__playerdetail-content">
         <div className="app__playerdetail-image">
           <IoIosPerson />
